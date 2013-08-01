@@ -130,6 +130,7 @@ class OrgParser(object):
         opml_file = os.path.splitext(self.org_file)[0] + '.opml'
         tree = ET.ElementTree(root)
         tree.write(opml_file)
+        return opml_file
 
 
 
@@ -140,5 +141,4 @@ if __name__ == '__main__':
 
     p = OrgParser(sys.argv[1])
     p.parse()
-    print 'Exporting to OPML'
-    p.to_opml()
+    print 'Exporting to OPML: %s' % p.to_opml()
