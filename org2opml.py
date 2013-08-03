@@ -10,10 +10,12 @@
 import re
 import os
 import sys
+import codecs
 import xml.etree.ElementTree as ET
 
 
 class Node(object):
+
     """Represents a Node. Also stores the references to
     all its children which are also Node instances.
     """
@@ -44,7 +46,7 @@ class OrgParser(object):
         self.root_name = ''
         self.nodes = []
         self.prev_node = None
-        with open(org_file, 'r') as f:
+        with codecs.open(org_file, 'r', encoding='UTF-8') as f:
             self.content = f.readlines()
 
     def parse(self):
@@ -84,14 +86,14 @@ class OrgParser(object):
 
             if level == 1:
                 try:
-                    self.nodes[level-1].append(newnode)
+                    self.nodes[level - 1].append(newnode)
                 except IndexError:
                     self.nodes.append([newnode])
             else:
-                parent = self.nodes[level-2][-1]
+                parent = self.nodes[level - 2][-1]
                 parent.add_child(newnode)
                 try:
-                    self.nodes[level-1].append(newnode)
+                    self.nodes[level - 1].append(newnode)
                 except IndexError:
                     self.nodes.append([newnode])
 
@@ -104,39 +106,42 @@ class OrgParser(object):
             self.root_name = self.nodes[0].text
             skip_root = True
 
-        root = ET.Element('opml', attrib={'version':'1.0'})
+        root = ET.Element('opml', attrib={'version': '1.0'})
         head = ET.SubElement(root, 'head')
         title = ET.SubElement(head, 'title')
         title.text = self.title
         author = ET.SubElement(head, 'ownername')
         author.text = self.author
         body = ET.SubElement(root, 'body')
-        outline = ET.SubElement(body, 'outline', attrib={'text':self.root_name})
+        outline = ET.SubElement(body, 'outline', attrib={
+                                'text': self.root_name})
 
         # Recursively iterate the Node and construct the XML ElementTree
         def iterate_children(node, ol):
             for child in node.children:
-                element = ET.SubElement(ol, 'outline', attrib={'text': child.text})
+                element = ET.SubElement(
+                    ol, 'outline', attrib={'text': child.text})
                 iterate_children(child, element)
 
         # Iterate through the root nodes represented by single *
         for root_node in self.nodes[0]:
             if not skip_root:
-                ol = ET.SubElement(outline, 'outline', attrib={'text': root_node.text})
+                ol = ET.SubElement(outline, 'outline', attrib={
+                                   'text': root_node.text})
                 iterate_children(root_node, ol)
             else:
                 iterate_children(root_node, outline)
 
         opml_file = os.path.splitext(self.org_file)[0] + '.opml'
         tree = ET.ElementTree(root)
-        tree.write(opml_file)
-        return opml_file
+        tree.write(opml_file, encoding='UTF-8', xml_declaration=True)
 
+        return opml_file
 
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print 'Usange: org2opml.py <input-org-file>'
+        print 'Usage: org2opml.py <input-org-file>'
         sys.exit(-2)
 
     p = OrgParser(sys.argv[1])
