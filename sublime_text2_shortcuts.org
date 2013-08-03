@@ -1,0 +1,60 @@
+#+TITLE: Sublime Text 2 Shortcuts
+#+AUTHOR: Sreejith Kesavan
+#+ROOT: Sublime Text 2
+
+
+* General
+** Go to File (⌘T)
+** Go to Project (⌘ + Control + P)
+** Go to Methods (⌘R)
+** Go to Line (Control + G)
+** Toggle Side Bar (⌘KB)
+** Command Prompt (⌘ + Shift + P)
+** New Window (⌘ + Shift + N)
+
+* XML/HTML
+** Select Content Into Tag (⌘ + Shift + A)
+** Close Tag (⌘ + Option + .)
+
+* Find/Replace
+** Find (⌘F)
+** Replace (⌘ + Option + F)
+** Find Next Occurrence of Current Word (Option + ⌘ + G)
+** Find All Occurr­ences of Current Word (Control + ⌘ + G)
+** Find in Files (⌘ + Shift + F)
+
+* Editing
+** Select Line repea­tedly (⌘L)
+** Select Word repea­tedly (⌘D)
+** Select Content In Brackets (Control + Shift + M)
+** Insert Line Before (⌘ + Shift + Enter)
+** Insert Line After (⌘ + Enter)
+** Delete Line (Control + Shift + K)
+** Delete Line from Cursor to End of Line (⌘KK)
+** Delete Line from Cursor to Start of Line (⌘K + Delete)
+** Duplicate Line(s) (⌘ + Shift + D)
+** Join Lines (⌘J)
+** Upper Case (⌘KU)
+** Lower Case (⌘KL)
+** Comment (⌘/)
+** Block Comment (⌘ + Option + /)
+** Redo (⌘Y)
+** Paste and Indent (⌘ + Shift + D)
+** Auto Complete (Repeat for next selection) (Control + Space)
+** Jump to Matching Bracket (Control + M)
+** Undo Movement (Soft Undo) (⌘U)
+** Redo Movement (Soft Redo) (⌘ + Shift + U)
+
+* Bookmarks
+** Toggle Bookmark (⌘F2)
+** Next Bookmark (F2)
+** Previous Bookmark (Shift + F2)
+** Clear Bookmarks (⌘ + Shift + F2)
+
+* Splits/Tabs
+** Single Column (⌘ + Option + 1)
+** Two Columns (⌘ + Option + 2)
+** Grid (⌘ + Option + 5)
+** Focus Group (Control + {1,2,3,4})
+** Move File to Group (Control + Shift + {1,2,3,4})
+** Select Tab (⌘ {1,2,3,4})
