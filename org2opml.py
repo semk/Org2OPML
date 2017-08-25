@@ -12,6 +12,7 @@ import os
 import sys
 import codecs
 import xml.etree.ElementTree as ET
+from xml.dom import minidom
 
 
 class Node(object):
@@ -133,8 +134,15 @@ class OrgParser(object):
                 iterate_children(root_node, outline)
 
         opml_file = os.path.splitext(self.org_file)[0] + '.opml'
-        tree = ET.ElementTree(root)
-        tree.write(opml_file, encoding='UTF-8', xml_declaration=True)
+
+        # This code writes ugly XML
+        # tree = ET.ElementTree(root)
+        # tree.write(opml_file, encoding='UTF-8', xml_declaration=True)
+
+        # Pretty print the XML into the file
+        xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(encoding='UTF-8')
+        with open(opml_file, 'w') as f:
+            f.write(xmlstr)
 
         return opml_file
 

@@ -1,2 +1,67 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<opml version="1.0"><head><title>Sublime Text 2 Shortcuts</title><ownername>Sreejith Kesavan</ownername></head><body><outline text="Sublime Text 2"><outline text="General"><outline text="Go to File (⌘T)" /><outline text="Go to Project (⌘ + Control + P)" /><outline text="Go to Methods (⌘R)" /><outline text="Go to Line (Control + G)" /><outline text="Toggle Side Bar (⌘KB)" /><outline text="Command Prompt (⌘ + Shift + P)" /><outline text="New Window (⌘ + Shift + N)" /></outline><outline text="XML/HTML"><outline text="Select Content Into Tag (⌘ + Shift + A)" /><outline text="Close Tag (⌘ + Option + .)" /></outline><outline text="Find/Replace"><outline text="Find (⌘F)" /><outline text="Replace (⌘ + Option + F)" /><outline text="Find Next Occurrence of Current Word (Option + ⌘ + G)" /><outline text="Find All Occurr­ences of Current Word (Control + ⌘ + G)" /><outline text="Find in Files (⌘ + Shift + F)" /></outline><outline text="Editing"><outline text="Select Line repea­tedly (⌘L)" /><outline text="Select Word repea­tedly (⌘D)" /><outline text="Select Content In Brackets (Control + Shift + M)" /><outline text="Insert Line Before (⌘ + Shift + Enter)" /><outline text="Insert Line After (⌘ + Enter)" /><outline text="Delete Line (Control + Shift + K)" /><outline text="Delete Line from Cursor to End of Line (⌘KK)" /><outline text="Delete Line from Cursor to Start of Line (⌘K + Delete)" /><outline text="Duplicate Line(s) (⌘ + Shift + D)" /><outline text="Join Lines (⌘J)" /><outline text="Upper Case (⌘KU)" /><outline text="Lower Case (⌘KL)" /><outline text="Comment (⌘/)" /><outline text="Block Comment (⌘ + Option + /)" /><outline text="Redo (⌘Y)" /><outline text="Paste and Indent (⌘ + Shift + D)" /><outline text="Auto Complete (Repeat for next selection) (Control + Space)" /><outline text="Jump to Matching Bracket (Control + M)" /><outline text="Undo Movement (Soft Undo) (⌘U)" /><outline text="Redo Movement (Soft Redo) (⌘ + Shift + U)" /></outline><outline text="Bookmarks"><outline text="Toggle Bookmark (⌘F2)" /><outline text="Next Bookmark (F2)" /><outline text="Previous Bookmark (Shift + F2)" /><outline text="Clear Bookmarks (⌘ + Shift + F2)" /></outline><outline text="Splits/Tabs"><outline text="Single Column (⌘ + Option + 1)" /><outline text="Two Columns (⌘ + Option + 2)" /><outline text="Grid (⌘ + Option + 5)" /><outline text="Focus Group (Control + {1,2,3,4})" /><outline text="Move File to Group (Control + Shift + {1,2,3,4})" /><outline text="Select Tab (⌘ {1,2,3,4})" /></outline></outline></body></opml>
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<title>Sublime Text 2 Shortcuts</title>
+		<ownername>Sreejith Kesavan</ownername>
+	</head>
+	<body>
+		<outline text="Sublime Text 2">
+			<outline text="General">
+				<outline text="Go to File (⌘T)"/>
+				<outline text="Go to Project (⌘ + Control + P)"/>
+				<outline text="Go to Methods (⌘R)"/>
+				<outline text="Go to Line (Control + G)"/>
+				<outline text="Toggle Side Bar (⌘KB)"/>
+				<outline text="Command Prompt (⌘ + Shift + P)"/>
+				<outline text="New Window (⌘ + Shift + N)"/>
+			</outline>
+			<outline text="XML/HTML">
+				<outline text="Select Content Into Tag (⌘ + Shift + A)"/>
+				<outline text="Close Tag (⌘ + Option + .)"/>
+			</outline>
+			<outline text="Find/Replace">
+				<outline text="Find (⌘F)"/>
+				<outline text="Replace (⌘ + Option + F)"/>
+				<outline text="Find Next Occurrence of Current Word (Option + ⌘ + G)"/>
+				<outline text="Find All Occurr­ences of Current Word (Control + ⌘ + G)"/>
+				<outline text="Find in Files (⌘ + Shift + F)"/>
+			</outline>
+			<outline text="Editing">
+				<outline text="Select Line repea­tedly (⌘L)"/>
+				<outline text="Select Word repea­tedly (⌘D)"/>
+				<outline text="Select Content In Brackets (Control + Shift + M)"/>
+				<outline text="Insert Line Before (⌘ + Shift + Enter)"/>
+				<outline text="Insert Line After (⌘ + Enter)"/>
+				<outline text="Delete Line (Control + Shift + K)"/>
+				<outline text="Delete Line from Cursor to End of Line (⌘KK)"/>
+				<outline text="Delete Line from Cursor to Start of Line (⌘K + Delete)"/>
+				<outline text="Duplicate Line(s) (⌘ + Shift + D)"/>
+				<outline text="Join Lines (⌘J)"/>
+				<outline text="Upper Case (⌘KU)"/>
+				<outline text="Lower Case (⌘KL)"/>
+				<outline text="Comment (⌘/)"/>
+				<outline text="Block Comment (⌘ + Option + /)"/>
+				<outline text="Redo (⌘Y)"/>
+				<outline text="Paste and Indent (⌘ + Shift + D)"/>
+				<outline text="Auto Complete (Repeat for next selection) (Control + Space)"/>
+				<outline text="Jump to Matching Bracket (Control + M)"/>
+				<outline text="Undo Movement (Soft Undo) (⌘U)"/>
+				<outline text="Redo Movement (Soft Redo) (⌘ + Shift + U)"/>
+			</outline>
+			<outline text="Bookmarks">
+				<outline text="Toggle Bookmark (⌘F2)"/>
+				<outline text="Next Bookmark (F2)"/>
+				<outline text="Previous Bookmark (Shift + F2)"/>
+				<outline text="Clear Bookmarks (⌘ + Shift + F2)"/>
+			</outline>
+			<outline text="Splits/Tabs">
+				<outline text="Single Column (⌘ + Option + 1)"/>
+				<outline text="Two Columns (⌘ + Option + 2)"/>
+				<outline text="Grid (⌘ + Option + 5)"/>
+				<outline text="Focus Group (Control + {1,2,3,4})"/>
+				<outline text="Move File to Group (Control + Shift + {1,2,3,4})"/>
+				<outline text="Select Tab (⌘ {1,2,3,4})"/>
+			</outline>
+		</outline>
+	</body>
+</opml>
